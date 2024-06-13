@@ -19,16 +19,12 @@ import SingleJob from './pages/SingleJob';
 import DashUsers from './pages/admin/DashUsers';
 import DashJobs from './pages/admin/DashJobs';
 
-//HOC
 const UserDashboardHOC = Layout(UserDashboard);
 const UserJobsHistoryHOC = Layout(UserJobsHistory);
 const UserInfoDashboardHOC = Layout(UserInfoDashboard);
 const AdminDashboardHOC = Layout(AdminDashboard);
 const DashUsersHOC = Layout(DashUsers);
 const DashJobsHOC = Layout(DashJobs);
-
-
-
 
 const App = () => {
 

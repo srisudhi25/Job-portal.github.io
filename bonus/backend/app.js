@@ -20,6 +20,7 @@ const cookieParser = require("cookie-parser");
 const errorHandler = require("./middleware/error");
 
 //database connection
+console.log("Database URI:", process.env.DATABASE);
 mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -69,7 +70,7 @@ if (process.env.NODE_ENV === 'production') {
 app.use(errorHandler);
 
 //port
-const port = process.env.PORT || 9000
+const port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
